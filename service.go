@@ -32,12 +32,12 @@ func main() {
 	// try making http request against sample site
 	response, err := http.Get("http://129.157.179.180:3000/shield/33/45/red/brondera")
 	
-//start ykill
+//start task4
 	for i := 0; i < 10; i++ {
-		s := "http://129.157.179.180:3000/fighters/33/" + s + "/red/brondera"
+		s := "http://129.157.179.180:3000/fighters/33/" + i + "/red/brondera"
 		response2 := http.Get(s)
 	}
-//END ykill
+//END task4
 	
 	if err != nil {
 		fmt.Println("Error making GET call")
