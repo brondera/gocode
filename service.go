@@ -1,5 +1,4 @@
 package main
-// My microservice!
 import ("github.com/ant0ine/go-json-rest/rest"
 	"fmt"
 	"database/sql"
@@ -8,6 +7,22 @@ import ("github.com/ant0ine/go-json-rest/rest"
 	"net/http"
 	"os")
 func main() {
+
+	// My REST!
+	response, err := http.Get("http://129.157.179.180:3000/shield/33/45/red/brondera")
+
+	if err != nil {
+		fmt.Print(err.Error())
+		os.Exit(1)
+	}
+	
+	responseData, err := ioutil.ReadAll(response.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(string(responseData))
+	//END My REST!
+	
     // try making database connection and query
     db, err := sql.Open("mysql", "user:pass@tcp(ip:port)/databasename")
     defer db.Close()
