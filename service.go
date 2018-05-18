@@ -33,8 +33,9 @@ func main() {
 	response, err := http.Get("http://129.157.179.180:3000/shield/33/45/red/brondera")
 	
 //start task4
+	var s := ""
 	for i := 0; i < 10; i++ {
-		s := "http://129.157.179.180:3000/fighters/33/" + i + "/red/brondera"
+		s = "http://129.157.179.180:3000/fighters/33/" + i + "/red/brondera"
 		response2 := http.Get(s)
 	}
 //END task4
