@@ -5,8 +5,8 @@ import ("github.com/ant0ine/go-json-rest/rest"
 	_ "github.com/go-sql-driver/mysql"
 	"io/ioutil"
 	"net/http"
-	"os"
-       "strconv")
+	"os")
+
 func main() {
 	
     // try making database connection and query
