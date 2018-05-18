@@ -9,6 +9,7 @@ import ("github.com/ant0ine/go-json-rest/rest"
 func main() {
 
 	// My REST!
+	/*
 	response, err := http.Get("http://129.157.179.180:3000/shield/33/45/red/brondera")
 
 	if err != nil {
@@ -21,6 +22,7 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Println(string(responseData))
+	*/
 	//END My REST!
 	
     // try making database connection and query
@@ -44,7 +46,7 @@ func main() {
 	}
 	
 	// try making http request against sample site
-	response, err := http.Get("http://ip.jsontest.com/")
+	response, err := http.Get("http://129.157.179.180:3000/shield/33/45/red/brondera")
 	if err != nil {
 		fmt.Println("Error making GET call")
 	} else {
