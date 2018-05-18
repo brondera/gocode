@@ -32,7 +32,7 @@ func main() {
 	// try making http request against sample site
 	response, err := http.Get("http://129.157.179.180:3000/shield/33/45/red/brondera")
 	
-//start task4
+	//start task4. NOT: Unclear if string declaration is working or not!
 	var s := ""
 	for i := 0; i < 10; i++ {
 		s = "http://129.157.179.180:3000/fighters/33/" + i + "/red/brondera"
