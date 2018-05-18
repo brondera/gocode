@@ -33,7 +33,7 @@ func main() {
 	
 //start ykill
 	for i := 0; i < 10; i++ {
-		s := string(i) 
+		s := strconv.Itoa(i) 
 		response2 := http.Get("http://129.157.179.180:3000/fighters/33/" + s + "/red/brondera")
 	}
 //END ykill
